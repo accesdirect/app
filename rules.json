@@ -1,49 +1,48 @@
+actions: {
+    "lemonde.fr": {
         actions: {
-            "lemonde.fr": {
-                actions: {
-                    accept: {
-                        type: 'click',
-                        selector: '.gdpr-lmd-button'
-                    },
-                    refuse: null
-                },
+            accept: {
+                type: 'click',
+                selector: '.gdpr-lmd-button'
             },
-            "francetvinfo.fr": {
-                actions: {
-                    accept: {
-                        type: 'click',
-                        selector: '#didomi-notice-agree-button',
-                    },
-                    refuse: null
-                },
+            refuse: null
+        },
+    },
+    "francetvinfo.fr": {
+        actions: {
+            accept: {
+                type: 'click',
+                selector: '#didomi-notice-agree-button',
             },
-            "lefigaro.fr": {
-                actions: {
-                    accept: {
-                        type: 'click',
-                        selector: '.button__acceptAll',
-                    },
-                    refuse: {
-                        type: 'click',
-                        selector: '.button__skip'
-                    }
-                }
+            refuse: null
+        },
+    },
+    "lefigaro.fr": {
+        actions: {
+            accept: {
+                type: 'click',
+                selector: '.button__acceptAll',
             },
-            "liberation.fr": {
-                actions: {
-                    accept: {
-                        type: 'click',
-                        selector: '.sp_choice_type_11',
-                    },
-                    refuse: {
-                        type: 'multiple',
-                        selector: `<script>
-                            document.querySelector('.sp_choice_type_9').click();
-                            setTimeout(() => {
-                                document.querySelector('.sp_choice_type_SAVE_AND_EXIT').click();
-                            });
-                        </script>`
-                    }
-                }
-            },
+            refuse: {
+                type: 'click',
+                selector: '.button__skip'
+            }
         }
+    },
+    "liberation.fr": {
+        actions: {
+            accept: {
+                type: 'click',
+                selector: '.sp_choice_type_11',
+            },
+            refuse: {
+                type: 'multiple',
+                run: `<script>
+                    document.querySelector('.sp_choice_type_9').click();
+                    setTimeout(() => {
+                        document.querySelector('.sp_choice_type_SAVE_AND_EXIT').click();
+                    });
+                </script>`
+            }
+        }
+    }
