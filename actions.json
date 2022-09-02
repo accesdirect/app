@@ -7,7 +7,7 @@
                     "selector": ".gdpr-lmd-button"
                 },
                 "refuse": null
-            },
+            }
         },
         "francetvinfo.fr": {
             "actions": {
@@ -17,6 +17,15 @@
                 },
                 "refuse": null
             },
+        },
+        "meteofrance.com": {
+            "actions": {
+                "accept": {
+                    "type": "click",
+                    "selector": "#didomi-notice-agree-button"
+                },
+                "refuse": null
+            }
         },
         "lefigaro.fr": {
             "actions": {
@@ -49,6 +58,87 @@
                     "run": "#didomi-notice-agree-button"
                 },
                 "refuse": null
+            }
+        },
+        "yahoo.com": {
+            "actions": {
+                "accept": {
+                    "type": "click",
+                    "run": "input[name='agree']"
+                },
+                "refuse": {
+                    "type": "click",
+                    "run": "input[name='reject']"
+                }
+            }
+        },
+        "bing.com": {
+            "actions": {
+                "accept": {
+                    "type": "click",
+                    "run": "#bnp_btn_accept>a"
+                },
+                "refuse": {
+                    "type": "click",
+                    "run": "#bnp_btn_reject>a"
+                }
+            }
+        },
+        "msn.com": {
+            "actions": {
+                "accept": {
+                    "type": "click",
+                    "run": "#onetrust-accept-btn-handler"
+                },
+                "refuse": {
+                    "type": "click",
+                    "run": "#onetrust-reject-all-handler"
+                }
+            }
+        },
+        "netflix.com": {
+            "actions": {
+                "accept": {
+                    "type": "click",
+                    "run": ".btn-accept"
+                },
+                "refuse": {
+                    "type": "click",
+                    "run": ".btn-reject"
+                }
+            }
+        },
+        "orange.fr": {
+            "actions": {
+                "accept": {
+                    "type": "click",
+                    "selector": "#didomi-notice-agree-button"
+                },
+                "refuse": null
+            }
+        },
+        "amazon.fr": {
+            "actions": {
+                "accept": {
+                    "type": "click",
+                    "selector": "#sp-cc-accept"
+                },
+                "refuse": {
+                    "type": "click",
+                    "selector": "#sp-cc-reject"
+                }
+            }
+        },
+        "booking.com": {
+            "actions": {
+                "accept": {
+                    "type": "click",
+                    "selector": "#onetrust-accept-btn-handler"
+                },
+                "refuse": {
+                    "type": "click",
+                    "selector": "#onetrust-reject-all-handler"
+                }
             }
         }
     }
