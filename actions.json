@@ -41,6 +41,15 @@
                     "run": "<script>document.querySelector(\".sp_choice_type_9\").click();setTimeout(() => {document.querySelector(\".sp_choice_type_SAVE_AND_EXIT\").click();});</script>"
                 }
             }
+        },
+        "leboncoin.fr": {
+            "actions": {
+                "accept": {
+                    "type": "click",
+                    "run": "#didomi-notice-agree-button"
+                },
+                "refuse": null
+            }
         }
     }
 }
