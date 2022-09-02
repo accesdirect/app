@@ -1,0 +1,49 @@
+actions: {
+            "lemonde.fr": {
+                actions: {
+                    accept: {
+                        type: 'click',
+                        selector: '.gdpr-lmd-button'
+                    },
+                    refuse: null
+                },
+            },
+            "francetvinfo.fr": {
+                actions: {
+                    accept: {
+                        type: 'click',
+                        accept: '#didomi-notice-agree-button',
+                    },
+                    refuse: null
+                },
+            },
+            "lefigaro.fr": {
+                actions: {
+                    accept: {
+                        type: 'click',
+                        accept: '.button__acceptAll',
+                    },
+                    refuse: {
+                        type: 'click',
+                        refuse: '.button__skip'
+                    }
+                }
+            },
+            "liberation.fr": {
+                actions: {
+                    accept: {
+                        type: 'click',
+                        accept: '.sp_choice_type_11',
+                    },
+                    refuse: {
+                        type: 'multiple',
+                        refuse: `<script>
+                            document.querySelector('.sp_choice_type_9').click();
+                            setTimeout(() => {
+                                document.querySelector('.sp_choice_type_SAVE_AND_EXIT').click();
+                            });
+                        </script>`
+                    }
+                }
+            },
+        }
