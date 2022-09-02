@@ -1,4 +1,4 @@
-actions: {
+        actions: {
             "lemonde.fr": {
                 actions: {
                     accept: {
@@ -12,7 +12,7 @@ actions: {
                 actions: {
                     accept: {
                         type: 'click',
-                        accept: '#didomi-notice-agree-button',
+                        selector: '#didomi-notice-agree-button',
                     },
                     refuse: null
                 },
@@ -21,11 +21,11 @@ actions: {
                 actions: {
                     accept: {
                         type: 'click',
-                        accept: '.button__acceptAll',
+                        selector: '.button__acceptAll',
                     },
                     refuse: {
                         type: 'click',
-                        refuse: '.button__skip'
+                        selector: '.button__skip'
                     }
                 }
             },
@@ -33,11 +33,11 @@ actions: {
                 actions: {
                     accept: {
                         type: 'click',
-                        accept: '.sp_choice_type_11',
+                        selector: '.sp_choice_type_11',
                     },
                     refuse: {
                         type: 'multiple',
-                        refuse: `<script>
+                        selector: `<script>
                             document.querySelector('.sp_choice_type_9').click();
                             setTimeout(() => {
                                 document.querySelector('.sp_choice_type_SAVE_AND_EXIT').click();
